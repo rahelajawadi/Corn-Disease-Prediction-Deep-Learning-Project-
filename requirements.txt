@@ -1,0 +1,4 @@
+streamlit
+ai-edge-litert==2.1.5
+pillow
+numpy
