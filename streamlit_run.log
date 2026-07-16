@@ -1,0 +1,121 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2026-06-20 18:03:01.775 Uvicorn server started on 0.0.0.0:8501
+2026-06-20 18:03:01.873 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://127.0.0.1:8501
+
+  For better performance, install the Watchdog module:
+
+  $ xcode-select --install
+  $ pip install watchdog
+            
+Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py:587
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py:587>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 587, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 682, in _handle_scriptrunner_event_on_event_loop
+    msg = self._create_new_session_message(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 841, in _create_new_session_message
+    _populate_user_info_msg(imsg.user_info)
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 1339, in _populate_user_info_msg
+    inst = Installation.instance()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 435, in instance
+    cls._instance = Installation()
+                    ^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 444, in __init__
+    self.installation_id_v4 = _get_machine_id_v4()
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 416, in _get_machine_id_v4
+    with file_util.streamlit_write(filepath) as output:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/file_util.py", line 113, in streamlit_write
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+PermissionError: [Errno 1] Operation not permitted: '/Users/rahelajawadi/.streamlit'
+/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/keras/src/layers/convolutional/base_conv.py:113: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py:587
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py:587>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 587, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 682, in _handle_scriptrunner_event_on_event_loop
+    msg = self._create_new_session_message(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 841, in _create_new_session_message
+    _populate_user_info_msg(imsg.user_info)
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 1339, in _populate_user_info_msg
+    inst = Installation.instance()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 435, in instance
+    cls._instance = Installation()
+                    ^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 444, in __init__
+    self.installation_id_v4 = _get_machine_id_v4()
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 416, in _get_machine_id_v4
+    with file_util.streamlit_write(filepath) as output:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/file_util.py", line 113, in streamlit_write
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+PermissionError: [Errno 1] Operation not permitted: '/Users/rahelajawadi/.streamlit'
+Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py:587
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py:587>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 587, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 682, in _handle_scriptrunner_event_on_event_loop
+    msg = self._create_new_session_message(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 841, in _create_new_session_message
+    _populate_user_info_msg(imsg.user_info)
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/app_session.py", line 1339, in _populate_user_info_msg
+    inst = Installation.instance()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 435, in instance
+    cls._instance = Installation()
+                    ^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 444, in __init__
+    self.installation_id_v4 = _get_machine_id_v4()
+                              ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 416, in _get_machine_id_v4
+    with file_util.streamlit_write(filepath) as output:
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/rahelajawadi/Documents/Github/Corn-Disease-Prediction-Deep-Learning-Project--master/venv-mac/lib/python3.12/site-packages/streamlit/file_util.py", line 113, in streamlit_write
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+  File "<frozen os>", line 225, in makedirs
+PermissionError: [Errno 1] Operation not permitted: '/Users/rahelajawadi/.streamlit'
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1781996729.189603 26519929 cpu_utils.cc:145] Failed to get CPU frequency: 0 Hz
+W0000 00:00:1781996729.200746 26519929 op_level_cost_estimator.cc:743] Invalid device specifications for CPU: goo.gle/debugproto    type: "CPU" model: "0" num_cores: 10 environment { key: "cpu_instruction_set" value: "ARM NEON" } environment { key: "eigen" value: "3.5.0" } l1_cache_size: 16384 l2_cache_size: 524288 l3_cache_size: 524288 memory_size: 268435456
+2026-06-20 18:05:29.272 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+  Stopping...
