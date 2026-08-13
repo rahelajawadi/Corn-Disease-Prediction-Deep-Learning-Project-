@@ -36,4 +36,8 @@ Streamlit-powered interface with image uploads and built-in sample images.
 
 **Python** · **TensorFlow Lite / LiteRT** · **Streamlit** · **NumPy** · **Pillow**
 
+##  Outcome
+
+Built and deployed an interactive deep learning application for real-time corn disease classification.
+
 
