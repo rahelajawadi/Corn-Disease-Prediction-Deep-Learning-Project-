@@ -2,14 +2,6 @@
 
 
 
-<p align="center">
-  <strong>Deep Learning-Based Corn Leaf Disease Classification</strong>
-</p>
-
-
-
----
-
 ## Overview
 
 This project implements a **deep learning image classification system** for detecting corn leaf diseases. Users can upload a corn leaf image and receive an instant prediction along with a confidence score.
