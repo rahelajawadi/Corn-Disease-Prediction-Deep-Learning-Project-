@@ -1,6 +1,6 @@
 #  Corn Disease Detection
 
-# Corn Disease Detection
+
 
 <p align="center">
   <strong>Deep Learning-Based Corn Leaf Disease Classification</strong>
