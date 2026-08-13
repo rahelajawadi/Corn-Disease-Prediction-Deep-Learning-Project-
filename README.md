@@ -1,36 +1,17 @@
-# Corn Disease Detection
+Corn Disease Detection
 
-A Streamlit web app that classifies corn (maize) leaf images as **Blight**,
-**Common Rust**, **Gray Leaf Spot**, or **Healthy** using a deep learning model.
+This project implements a deep learning–based corn leaf disease classification system using a custom-trained TensorFlow Lite model. The model is deployed with a Streamlit interface, allowing users to upload corn leaf images and receive instant predictions.
 
-## Features
+Highlights
 
-- Upload a leaf image and get an instant prediction
-- Confidence score for each class
-- Built-in sample images to try
+Disease Classification - Detects Blight, Common Rust, Gray Leaf Spot, and Healthy leaves.
 
-## Run locally
+Deep Learning Model - Uses a trained TensorFlow Lite model for image classification.
 
-```bash
-python3 -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-streamlit run streamlit_app.py
-```
+Confidence Scores - Displays the predicted class and confidence level.
 
-Then open http://localhost:8501.
+Interactive App - Streamlit-powered interface with image uploads and sample images.
 
-> **Note:** If you see `PermissionError: [Errno 1] Operation not permitted:
-> '~/.streamlit'`, your environment is blocking writes to your home directory.
-> Use the included launcher, which keeps Streamlit's config inside the project:
->
-> ```bash
-> ./run_app.sh
-> ```
+Tech Stack
 
-## Files
-
-- `streamlit_app.py` — the app
-- `model.tflite` — the trained model used for predictions
-- `requirements.txt` — dependencies
-- `static/` — sample images
+Python - TensorFlow Lite / LiteRT - Streamlit - NumPy - Pillow
