@@ -16,27 +16,28 @@ This project implements a **deep learning image classification system** for dete
 
 ## ✨ Highlights
 
-🌱 **Disease Classification**  
+ **Disease Classification**  
 Detects **Blight, Common Rust, Gray Leaf Spot,** and **Healthy** leaves.
 
-🧠 **Deep Learning Model**  
+ **Deep Learning Model**  
 Uses a trained **TensorFlow Lite** model for image classification.
 
-📊 **Confidence Scores**  
+ **Confidence Scores**  
 Displays the predicted class and confidence level for each prediction.
 
-🖥️ **Interactive App**  
+ **Interactive App**  
 Streamlit-powered interface with image uploads and built-in sample images.
+
+## 🚀 Streamlit App
+
+[**Try the Corn Disease Detection App →**](https://corn-disease-detection-app.streamlit.app/)
 
 ## 🛠️ Tech Stack
 
 **Python** · **TensorFlow Lite / LiteRT** · **Streamlit** · **NumPy** · **Pillow**
 
-## 📂 Project Structure
+##  Author
 
-```text
-├── streamlit_app.py
-├── model.tflite
-├── requirements.txt
-├── run_app.sh
-└── static/
+**Rahela Jawadi**
+
+[GitHub](https://github.com/rahelajawadi)
